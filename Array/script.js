@@ -3,8 +3,6 @@
 // }
 
 
-
-
 // const nameFinder = (students, studentName) => {
 //     for(let i= 0; i<= students.length; i++){
 //         if(students[i] === studentName) return studentName;
