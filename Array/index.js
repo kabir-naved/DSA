@@ -1,4 +1,2 @@
-let arr = ["naved", 3, {}, function(){},]
+let arr = [4,2,8];
 
-
-console.log(arr)

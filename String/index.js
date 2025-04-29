@@ -34,6 +34,13 @@ let str = "Hello World!";
 //   console.log(`${str2} is a palindrome`);
 // }
 
-let text = "Hello World!";
-let result = text.valueOf();
-console.log(typeof(result));
+// let text = "Hello World!";
+// let result = text.valueOf();
+// console.log(typeof(result));
+
+
+
+
+
+
+
