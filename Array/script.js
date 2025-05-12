@@ -107,16 +107,29 @@ let result2 =[0,1,1,0,1,0,0,1,0]
 function rightShift(arr) {
   let last = arr[0]
   for(let i =0; i < arr.length; i++){
-    // let temp = arr[i]
     arr[i] = arr[i+1]
-    // arr[i+1] = temp
   }
-
   arr[arr.length-1] = last
-  // console.log(last);
   return console.log(arr);
-  
-  
 }
 const result3 = [40, 9, 38, 38, 39, 9, 74];
-rightShift(result3);
+// rightShift(result3);
+
+
+// shift elem to left by k
+function kShift(arr,k) {
+  for(let j =0; j<k; j++){
+    let last = arr[0]
+    for(let i =0; i< arr.length; i++) {
+      arr[i] = arr[i+1]
+    }
+    arr[arr.length-1] = last
+  }
+  return console.log(arr)
+}
+
+let arr1 = [2,9,2,7,0,5]
+// kShift(arr1, 2)
+
+
+
