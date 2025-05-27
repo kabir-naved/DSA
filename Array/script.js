@@ -1,6 +1,3 @@
-// for(let i = 5; i >= 0; i--){
-//     console.log(i);
-// }
 
 // const nameFinder = (students, studentName) => {
 //     for(let i= 0; i<= students.length; i++){
@@ -100,7 +97,8 @@ function positioned(arr){
 }
 
 let result2 =[0,1,1,0,1,0,0,1,0]
-// positioned(result2)
+positioned(result2)
+
 
 
 ///shift one elem to the right
@@ -131,5 +129,40 @@ function kShift(arr,k) {
 let arr1 = [2,9,2,7,0,5]
 // kShift(arr1, 2)
 
+//kshift
+let k =2
+function kshift (arr,i,j) {
+  while(i<j) {
+    let temp = arr[i]
+    arr[i] =arr[j]
+    arr[j] =temp
+    i++
+    j--
+  }
+  return console.log(arr)
+}
 
+let arr = [2,3,4,5,6]
+/* 
+kshift(arr, 0, arr.length-1)
+kshift(arr, 0, k-1)
+kshift(arr, k, arr.length-1)
+*/
+
+
+const removeElem = (nums) => {
+  let j =1
+  for(let i =0; i< nums.length-1; i++){
+    if(nums[i] != nums[i+1]){
+      nums[j] = nums[i+1]
+      j++
+    }
+  }
+  console.log(nums);
+  return console.log(j);
+  
+}
+
+let nums = [1,1,2,3,4,4,5,6,6]
+removeElem(nums)
 
